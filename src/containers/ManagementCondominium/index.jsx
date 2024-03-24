@@ -36,14 +36,26 @@ const ManagementCondominium = () => {
               <div>ผู้รับผิดชอบ</div>
               {/* ----------------------------------------------Fillข้อมูลในช่องผู้รับผิดชอบ--------------------------------------------------- */}
               <div className="w-[700px]">
-                <Form.Item label="เลขบัตรประจำตัวประชาชน">
-                  <Input placeholder="เลขบัตรประจำตัวประชาชน" />
+                <Form.Item>
+                  <div className="flex items-center justify-between">
+                    <p>เลขบัตรประจำตัวประชาชน</p>
+                    <Input
+                      placeholder="เลขบัตรประจำตัวประชาชน"
+                      style={{ width: 500 }}
+                    />
+                  </div>
                 </Form.Item>
-                <Form.Item label="ชื่อนามสกุล">
-                  <Input placeholder="ชื่อ-นามสกุล" />
+                <Form.Item>
+                  <div className="flex items-center justify-between">
+                    <p>ชื่อนามสกุล</p>
+                    <Input placeholder="ชื่อ-นามสกุล" style={{ width: 500 }} />
+                  </div>
                 </Form.Item>
-                <Form.Item label="ตำแหน่ง">
-                  <Input placeholder="ตำแหน่ง" />
+                <Form.Item>
+                  <div className="flex items-center justify-between">
+                    <p>ตำแหน่ง</p>
+                    <Input placeholder="ตำแหน่ง" style={{ width: 500 }} />
+                  </div>
                 </Form.Item>
               </div>
             </div>
