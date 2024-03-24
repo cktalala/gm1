@@ -32,23 +32,24 @@ const ManagementCondominium = () => {
           </Button>
           {/* ----------------------------------------------ผู้รับผิดชอบ--------------------------------------------------- */}
           <Form>
-            <div className=" mt-4 border-solid border border-black rounded p-6 w-full  flex flex-col  gap-3">
-                <div className="flex justify-center">ผู้รับผิดชอบ</div>
+            <div className=" mt-4 border-solid border border-black rounded p-6 w-full flex flex-col gap-3 items-center">
+              <div className="flex justify-center">ผู้รับผิดชอบ</div>
               {/* ----------------------------------------------Fillข้อมูลในช่องผู้รับผิดชอบ--------------------------------------------------- */}
-
-              <Form.Item  label="เลขบัตรประจำตัวประชาชน">
-                <Input style={{ left:120,width: 300 }} placeholder="เลขบัตรประจำตัวประชาชน"/>
-              </Form.Item>
-              <Form.Item label="ชื่อนามสกุล">
-                <Input style={{ left:215,width: 300 }} placeholder="ชื่อ-นามสกุล" />
-              </Form.Item>
-              <Form.Item label="ตำแหน่ง">
-                <Input style={{ left:235, width: 300 }} placeholder="ตำแหน่ง" />
-              </Form.Item>
+              <div className="w-[700px]">
+                <Form.Item label="เลขบัตรประจำตัวประชาชน">
+                  <Input placeholder="เลขบัตรประจำตัวประชาชน" />
+                </Form.Item>
+                <Form.Item label="ชื่อนามสกุล">
+                  <Input placeholder="ชื่อ-นามสกุล" />
+                </Form.Item>
+                <Form.Item label="ตำแหน่ง">
+                  <Input placeholder="ตำแหน่ง" />
+                </Form.Item>
+              </div>
             </div>
             <div className=" mt-4 border-solid border border-black rounded p-6 w-full  flex flex-col  gap-3">
-            <div className="flex justify-center">รายละเอียด</div>
-              
+              <div className="flex justify-center">รายละเอียด</div>
+
               {/* ----------------------------------------------Fillข้อมูลในช่องรายละเอียด--------------------------------------------------- */}
               <Form.Item label="ทะเบียนเลขที่">
                 <Input style={{ width: 400 }} placeholder="ทะเบียนเลขที่" />
