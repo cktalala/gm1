@@ -3,7 +3,7 @@
 const theme = {
   token: {
     fontSize: 16,
-    colorPrimary: "#9AF0FF",
+    colorPrimary: "#25548C",
   },
 };
 
