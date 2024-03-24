@@ -1,5 +1,6 @@
 import React from "react";
-import { Input } from "antd";
+import { Input,Button } from "antd";
+import { SearchOutlined } from '@ant-design/icons';
 
 const ManagementCondominium = () => {
   return (
@@ -16,6 +17,9 @@ const ManagementCondominium = () => {
             placeholder="ทะเบียนอาคาร"
           />
           <Input style={{ width: 150 }} placeholder="ชื่ออาคารชุด" />
+          <Button type="primary" icon={<SearchOutlined />}>
+        ค้นหาข้อมูล
+      </Button>
         </div>
       </div>
     </>

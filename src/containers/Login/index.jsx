@@ -19,6 +19,7 @@ const LoginPage = () => {
             <button className="bg-blue-500 hover:bg-blue-700 text-white text-sm py-1  rounded-lg" onClick={()=>router.push("/ManagementEstablisment")}>
               การจัดตั้งนิติบุคคลหมู่บ้านจัดสรร
             </button>
+            
           </div>
         </div>
       </div>
