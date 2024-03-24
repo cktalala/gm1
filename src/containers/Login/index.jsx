@@ -1,19 +1,24 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React from "react";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import { Button } from "antd";
+
 
 const LoginPage = () => {
+  const router = useRouter()
   return (
     <>
-      <div className="h-screen flex justify-center items-center">
-        <div className="w-[300px]  bg-[#eaeaea] shadow-md rounded-lg p-20">
-          <h1>ระบบตรวจติดตามงาน</h1>
-          <div className="m-10 flex flex-col gap-1">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px rounded-lg ">Button</button>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px rounded-lg">Button</button>
+      <div className="h-screen flex justify-center items-center bg-[#232A6C] ">
+        <div className="w-[250px]  bg-[#eaeaea] shadow-md rounded-lg p-6">
+          <h1 className="flex justify-center items-center text-gray-950 ">
+            ระบบตรวจติดตามงาน
+          </h1>
+          <div className="mt-4 flex flex-col gap-2">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white text-sm py-1  rounded-lg" onClick={()=>router.push("/ManagementCondominium")}>
+              จดทะเบียนนิติบุคคลอาคารชุด
+            </button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white text-sm py-1  rounded-lg" onClick={()=>router.push("/ManagementEstablisment")}>
+              การจัดตั้งนิติบุคคลหมู่บ้านจัดสรร
+            </button>
           </div>
         </div>
       </div>
