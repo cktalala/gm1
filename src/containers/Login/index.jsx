@@ -7,7 +7,7 @@ const LoginPage = () => {
   const router = useRouter()
   return (
     <>
-      <div className="h-screen flex justify-center items-center bg-[#232A6C] ">
+      <div className="h-screen flex justify-center items-center bg-[#173154] "> 
         <div className="w-[250px]  bg-[#eaeaea] shadow-md rounded-lg p-6">
           <h1 className="flex justify-center items-center text-gray-950 ">
             ระบบตรวจติดตามงาน
