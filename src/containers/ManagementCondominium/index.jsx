@@ -33,7 +33,7 @@ const ManagementCondominium = () => {
           {/* ----------------------------------------------ผู้รับผิดชอบ--------------------------------------------------- */}
           <Form>
             <div className=" mt-4 border-solid border border-black rounded p-6 w-full flex flex-col gap-3 items-center">
-              <div className="flex justify-center">ผู้รับผิดชอบ</div>
+              <div>ผู้รับผิดชอบ</div>
               {/* ----------------------------------------------Fillข้อมูลในช่องผู้รับผิดชอบ--------------------------------------------------- */}
               <div className="w-[700px]">
                 <Form.Item label="เลขบัตรประจำตัวประชาชน">
