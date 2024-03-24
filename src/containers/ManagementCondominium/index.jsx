@@ -11,8 +11,11 @@ const ManagementCondominium = () => {
         </div>
         {/* -------------------------------------CARD------------------------------------------ */}
         <div className="bg-[#eaeaea] mt-4 rounded p-6 ">
-          <Input className="w-[150px]" placeholder="ทะเบียนอาคาร"  />
-          <Input className="w-[150px]" placeholder="ชื่ออาคารชุด" />
+          <Input
+            style={{ width: 150, marginRight: 20 }}
+            placeholder="ทะเบียนอาคาร"
+          />
+          <Input style={{ width: 150 }} placeholder="ชื่ออาคารชุด" />
         </div>
       </div>
     </>
